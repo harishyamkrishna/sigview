@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <numeric>
 
 struct Histogram {
     double binMin;
