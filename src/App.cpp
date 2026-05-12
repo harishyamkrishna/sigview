@@ -13,7 +13,7 @@ void SigView::RunInterface(const Histogram& hist, const std::string& filename) {
 
     auto renderer = Renderer([&] {
         // We use a canvas for high-resolution Braille plotting
-        auto c = Canvas(200, 100); 
+        auto c = Canvas(hist.nBins * 2, 100); 
         long long max_freq = hist.maxCount();
         //double fwhm = hist.calculateFWHM(); // Use the method we added earlier
 
