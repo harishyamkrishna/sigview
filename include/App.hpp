@@ -3,5 +3,5 @@
 #include <string>
 
 namespace SigView {
-    void RunInterface(const Histogram& hist, const std::string& filename);
+    void RunInterface(const Histogram& hist, const std::string& filename, const double& fwhm);
 }

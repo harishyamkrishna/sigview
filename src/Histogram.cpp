@@ -26,15 +26,18 @@ void Histogram::fill(double value) {
     }
 }
 
+// function to calculate the centre of the bin
 double Histogram::binCenter(int i) const {
     return binMin + (i + 0.5) * binWidth;
 }
 
+// function to calcullate the maximum count
 long long Histogram::maxCount() const {
     if (counts.empty()) return 0;
     return *std::max_element(counts.begin(), counts.end());
 }
 
+//function to calculate the total filled counts
 long long Histogram::totalFilled() const {
     return std::accumulate(counts.begin(), counts.end(), 0LL);
 }
