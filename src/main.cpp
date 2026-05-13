@@ -7,6 +7,7 @@
 #include "Histogram.hpp"
 #include "App.hpp"
 #include "DatParser.hpp"
+#include "Config.hpp"
 
 int main(int argc, char* argv[]) {
     if (argc < 2) {
@@ -20,13 +21,6 @@ int main(int argc, char* argv[]) {
         std::cerr << "Error: cannot open file: " << inputFile << "\n";
         return 1;
     }
-
-    // ---- Configuration -----------------------------------------
-    // Histogram range and bin count.
-    static const double HIST_MIN   = -2.0;   // This is in pC
-    static const double HIST_MAX   = 30.0;   // This is in pC
-    static const int    HIST_BINS  = 200;    // number of bins
-
 
     Histogram hist(HIST_MIN, HIST_MAX, HIST_BINS);
 
