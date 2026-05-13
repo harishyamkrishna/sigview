@@ -29,7 +29,7 @@ The tool is designed for use with detectors such as Multi-Wire Proportional Coun
 Requires CMake 3.15 or later and a C++20-capable compiler (GCC 10+, Clang 12+).
 
 ```bash
-git clone https://github.com/yourusername/sigview.git
+git clone https://github.com/harishyamkrishna/sigview.git
 cd sigview
 mkdir build && cd build
 cmake ..
