@@ -78,9 +78,10 @@ Events with only one channel present are counted as skipped and excluded from st
 Histogram parameters are set in `include/Config.hpp`:
 
 ```cpp
-inline constexpr double HIST_MIN  = -2.0;   // pC
-inline constexpr double HIST_MAX  = 30.0;   // pC
-inline constexpr int    HIST_BINS = 200;
+static const double HIST_MIN   = -2.0;   // This is in pC
+static const double HIST_MAX   = 30.0;   // This is in pC
+static const int    HIST_BINS  = 200;    // number of bins
+
 ```
 
 Adjust these to match the dynamic range of your detector and ADC.
