@@ -58,7 +58,7 @@ The program reads the file, processes all events, and launches the terminal inte
 
 ## Terminal Screenshot
 
-![Project Screenshot](assets/screenshot.png)
+![Project Screenshot](assets/Screenshot.png)
 
 ## Input File Format
 
