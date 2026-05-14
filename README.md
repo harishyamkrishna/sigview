@@ -56,6 +56,10 @@ The program reads the file, processes all events, and launches the terminal inte
 
 ---
 
+## Terminal Screenshot
+
+![Project Screenshot](assets/screenshot.png)
+
 ## Input File Format
 
 The parser expects `.dat` files with the following structure:
